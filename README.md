@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="evo-banner.svg" width="100%" alt="Sain Saji - PS5 media, GPU, reverse engineering"/>
+<img src="silicon-banner.svg" width="100%" alt="Sain Saji - PS5 media, GPU, reverse engineering"/>
 
 <br/>
 
-![Followers](https://img.shields.io/github/followers/sainsaji?style=for-the-badge&color=0070f3&labelColor=050816)
-![EVO Player stars](https://img.shields.io/github/stars/sainsaji/EVO-PLAYER-PS5?style=for-the-badge&label=EVO%20Player%20stars&color=ff2d9b&labelColor=050816)
-![Profile views](https://komarev.com/ghpvc/?username=sainsaji&style=for-the-badge&color=7c3aed&label=VIEWS)
+![Followers](https://img.shields.io/github/followers/sainsaji?style=for-the-badge&color=1b6fd6&labelColor=06142e)
+![EVO Player stars](https://img.shields.io/github/stars/sainsaji/EVO-PLAYER-PS5?style=for-the-badge&label=EVO%20Player%20stars&color=4fc3ff&labelColor=06142e)
+![Profile views](https://komarev.com/ghpvc/?username=sainsaji&style=for-the-badge&color=1b4f9a&label=VIEWS)
 
 </div>
 
