@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg" width="100%" alt="Sain Saji - PS5 media, GPU, reverse engineering"/>
+<img src="evo-banner.svg" width="100%" alt="Sain Saji - PS5 media, GPU, reverse engineering"/>
 
 <br/>
 
