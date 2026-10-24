@@ -1,6 +1,9 @@
-- 👋 Hi, I’m @sainsaji
+<div align="center">
 
-<!---
-sainsaji/sainsaji is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<img src="banner.svg" width="100%" alt="Sain Saji"/>
+
+**Native media player for jailbroken PS5.** Hardware decode, a bare-metal GPU UI, raw audio passthrough and GPU upscaling.
+
+[**EVO Player**](https://github.com/sainsaji/EVO-PLAYER-PS5) · [Audio Passthrough Research](https://github.com/sainsaji/PS5-Audio-Passthrough-Research) · [Upscaler Research](https://github.com/sainsaji/ps5-upscalar-research)
+
+</div>

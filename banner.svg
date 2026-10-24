@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f1ff"/>
+      <stop offset="0.5" stop-color="#6aa8ff"/>
+      <stop offset="1" stop-color="#3b2fd9"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <g id="bf" filter="url(#glow)">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1;0.2 1;1 1" dur="0.7s" repeatCount="indefinite"/>
+        <path d="M0,0 C-6,-20 -28,-30 -36,-14 C-40,-2 -16,8 0,0 Z" fill="url(#wing)"/>
+        <path d="M0,0 C6,-20 28,-30 36,-14 C40,-2 16,8 0,0 Z" fill="url(#wing)"/>
+        <path d="M0,2 C-8,12 -22,24 -14,28 C-6,30 0,14 0,2 Z" fill="#4f7dff" opacity="0.85"/>
+        <path d="M0,2 C8,12 22,24 14,28 C6,30 0,14 0,2 Z" fill="#4f7dff" opacity="0.85"/>
+      </g>
+      <rect x="-1" y="-10" width="2" height="26" rx="1" fill="#cfe3ff"/>
+    </g>
+  </defs>
+
+  <rect width="1000" height="480" fill="#000"/>
+
+  <!-- starfield -->
+  <g fill="#fff">
+    <circle cx="60" cy="70" r="1.2"><animate attributeName="opacity" values="0.1;1;0.1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="400" r="1"><animate attributeName="opacity" values="1;0.1;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="440" r="1"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="60" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="420" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="110" r="1"><animate attributeName="opacity" values="0.1;1;0.1" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="330" r="1.2"><animate attributeName="opacity" values="1;0.1;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="110" cy="240" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="250" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- sparkle trails -->
+  <g fill="none" stroke="#bcd6ff" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9" opacity="0.7">
+    <path id="t1" d="M-20,130 C200,60 400,200 1020,90">
+      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path id="t2" d="M-20,300 C250,220 450,380 1020,260">
+      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path id="t3" d="M-20,430 C300,350 600,470 1020,380">
+      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- butterflies riding the trails -->
+  <use xlink:href="#bf" href="#bf">
+    <animateMotion dur="14s" repeatCount="indefinite"><mpath xlink:href="#t1" href="#t1"/></animateMotion>
+  </use>
+  <use xlink:href="#bf" href="#bf" transform="scale(1.1)">
+    <animateMotion dur="19s" begin="-6s" repeatCount="indefinite"><mpath xlink:href="#t1" href="#t1"/></animateMotion>
+  </use>
+  <use xlink:href="#bf" href="#bf">
+    <animateMotion dur="17s" begin="-3s" repeatCount="indefinite"><mpath xlink:href="#t2" href="#t2"/></animateMotion>
+  </use>
+  <use xlink:href="#bf" href="#bf">
+    <animateMotion dur="22s" begin="-12s" repeatCount="indefinite"><mpath xlink:href="#t2" href="#t2"/></animateMotion>
+  </use>
+  <use xlink:href="#bf" href="#bf">
+    <animateMotion dur="16s" begin="-8s" repeatCount="indefinite"><mpath xlink:href="#t3" href="#t3"/></animateMotion>
+  </use>
+  <use xlink:href="#bf" href="#bf">
+    <animateMotion dur="24s" begin="-2s" repeatCount="indefinite"><mpath xlink:href="#t3" href="#t3"/></animateMotion>
+  </use>
+
+  <rect width="1000" height="480" fill="url(#vig)"/>
+
+  <!-- title -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle" filter="url(#glow)">
+    <text x="500" y="228" font-size="54" font-weight="700" letter-spacing="10" fill="#e6f1ff">SAIN SAJI</text>
+    <text x="500" y="268" font-size="16" letter-spacing="6" fill="#8fb4ff">PS5 MEDIA  ·  GPU  ·  REVERSE ENGINEERING</text>
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" repeatCount="indefinite"/>
+  </g>
+</svg>
